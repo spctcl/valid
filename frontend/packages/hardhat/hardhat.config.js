@@ -10,6 +10,7 @@ require("@nomiclabs/hardhat-ethers");
 require("@nomiclabs/hardhat-etherscan");
 
 const { isAddress, getAddress, formatUnits, parseUnits } = utils;
+const { GOERLI_INFURA_KEY, GOERLI_DEPLOYER_PRIV_KEY } = process.env;
 
 /*
       📡 This is where you configure your deploy configuration for 🏗 scaffold-eth
@@ -70,11 +71,10 @@ module.exports = {
       */
     },
     goerli: {
-      url: "https://goerli.infura.io/v3/02c55d691047439ab33be7c7dd9da4bc", // <---- YOUR INFURA ID! (or it won't work)
+      url: `https://goerli.infura.io/v3/${GOERLI_INFURA_KEY}`, // <---- YOUR INFURA ID! (or it won't work)
       //      url: "https://speedy-nodes-nyc.moralis.io/XXXXXXXXXXXXXXXXXXXXXXXXX/eth/goerli", // <---- YOUR MORALIS ID! (not limited to infura)
-      accounts: ['83f5d529c211e95b0e3f0a91e0c44763bb0b1718c9c129fb0bcee9ecf4a964e2']
+      accounts: [GOERLI_DEPLOYER_PRIV_KEY]
     },
-
   },
   dependencies: ["StakingPool", "ssvETH"],
   solidity: {
