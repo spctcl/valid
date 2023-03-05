@@ -30,7 +30,7 @@ export default function Header({ link, title, subTitle, ...props }) {
 }
 
 Header.defaultProps = {
-  link: "https://github.com/bloxapp/awesome-ssv/",
-  title: "🥩 SSV Staking",
-  subTitle: "SSV Staking Frontend Solution",
+  link: "https://github.com/spctcl/valid",
+  title: "Valid",
+  subTitle: "",
 };

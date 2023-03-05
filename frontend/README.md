@@ -12,7 +12,7 @@ You can find our live demo deployment [Here](https://awesome-ssv-staking.surge.s
 
 ## Prerequisites
 
-[Node (v18 LTS)](https://nodejs.org/en/download/)
+[Node (v18 LTS)](https://nodejs.org/en/download/) (In case of errors, try Node)
 [Yarn (v1.x)](https://classic.yarnpkg.com/en/docs/install/)
 [Git](https://git-scm.com/downloads)
 
