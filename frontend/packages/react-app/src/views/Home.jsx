@@ -90,12 +90,12 @@ function Home({ localProvider, readContracts, writeContracts, userSigner, gasPri
           </div>
 
           <div style={{ padding: 8 }}>
-            <h4>Your ssvETH:</h4>
+            <h4>Your valETH:</h4>
             <TokenBalance balance={Number(balanceStaked * (sharePrice / 10 ** 18))} fontSize={64} />
           </div>
 
           <div style={{ padding: 8 }}>
-            <h4>ETH/ssvETH ratio:</h4>
+            <h4>ETH/valETH ratio:</h4>
             <TokenBalance balance={sharePrice} fontSize={64} />
           </div>
         </div>
@@ -124,7 +124,7 @@ function Home({ localProvider, readContracts, writeContracts, userSigner, gasPri
       <div style={{ border: "1px solid #cccccc", padding: 16, width: 600, margin: "auto", marginTop: 32 }}>
         <h2>Pool overview:</h2>
         <h4>
-          Stake your ETH in the staking pool to earn our liquid staked derivative token called vldETH, which you can
+          Stake your ETH in the staking pool to earn our liquid staked derivative token called valETH, which you can
           also use in other DeFi protocols{" "}
         </h4>
         You can find more details{" "}
@@ -133,7 +133,7 @@ function Home({ localProvider, readContracts, writeContracts, userSigner, gasPri
         </a>
         <Divider />
         <div>
-          <h4>ssvETH Total Supply: </h4>
+          <h4>valETH Total Supply: </h4>
           <TokenBalance balance={Number(totalSupply)} fontSize={64} />
         </div>
         <Divider />
